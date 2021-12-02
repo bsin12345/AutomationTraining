@@ -8,9 +8,9 @@ public class OpenBrowser {
 	
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.geccko.driver", "D:\\Users\\bs_selva\\Downloads\\FirefoxDriver\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Users\\bs_selva\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		String title = driver.getTitle();

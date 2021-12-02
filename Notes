@@ -1,0 +1,50 @@
+String:
+
+charAt();
+length();
+equals();
+equalsIgnoreCase();
+isEmpty();
+contains();
+index of();
+index of();
+subString(int beginIndex)();
+subString(int beginIndex,int endIndex)();
+concat();
+replace();
+replace();
+toUppercase();
+toLowercase();
+trim();
+String.valueOF();
+split();
+
+
+shortcuts:
+
+cntl+shift+/ forward --> comments multiple line
+cntl+shift+\ backward --> uncomment 
+
+cntl+E go --> to previous class
+
+cntl+i --> alignment 
+
+****************************************************************************************************************************
+
+SELENIUM:
+
+4 components of Selenium:
+
+Selenium IDE - supports only firefox browser and has playback feautre. 
+Selenium RC  - supporsts all browsers but we need a server as an intermediate. Without server we cannot communicate with browswers.
+Selenium Webdriver  - overcame all the previous disadvantage of IDE and RC. 
+Selenium Grid - we can automate different machines in different plateforms with same code.
+
+--> can automate only web applications 
+--> cannot automate window based applications 
+--> cannot automate captcha, puzzles. otp
+
+Components to download:
+Selenium Jar  - right click program--> click add path-->configure add path -->click add external jar --> apply 
+chromedriver  - add this path in syster.setproperty
+firefoxdriver - add this path in syster.setproperty

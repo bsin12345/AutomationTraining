@@ -18,7 +18,7 @@ toLowercase();
 trim();
 String.valueOF();
 split();
-
+***************************************************************************************************************************
 
 shortcuts:
 
@@ -28,6 +28,7 @@ cntl+shift+\ backward --> uncomment
 cntl+E go --> to previous class
 
 cntl+i --> alignment 
+cntl+2 relese and press L  --> to return the datatype to store
 
 ****************************************************************************************************************************
 

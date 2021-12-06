@@ -1,0 +1,35 @@
+XPATH 
+
+Attributes:
+ id,class, name value,type,etc., 
+ 
+ To take xpath right click on the element --> inspect and dom page will appear
+ 
+
+Locating elements with attributes:
+//tagname[@attribute='values']
+e.g:- //input[@value='Append']
+
+//*[@attribute='values']
+
+Locating elements with texts:
+//tagname[text()='Actual text']
+e.g:-//label[text()='Clcik on the text']
+
+Locating elements with partial texts:
+//tagname[contains(text(),'partial text')]
+e.g:-//label[contains(text(),'Facebook helps')]
+
+Locating element from multiple attribute
+//tagname[@attribute='values'][@attribute2='value2']..[@attributeN='valueN']
+e.g:-//input[@type='button'][@value='Search']
+
+Locating element with starting text:
+//tagname[starts-with(text(),'starting text')]
+e.g:-//label[starts-with(text(),'Facebook')]
+
+Locating elements with dynamic attributes:
+//tagname[starts-with(@attributeName,'fixed value']
+eg:-//input[starts-with(@id,'entityid')]
+//tagname[contains(attributeName,'part ofthe value')]
+eg:-//input[contains(id,'entityid')]

@@ -1,0 +1,55 @@
+package driverMethods;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selectables {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "D:\\Users\\bs_selva\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();  
+        driver.get("https://itera-qa.azurewebsites.net/home/automation");
+        List<WebElement> boxes = driver.findElements(By.xpath("//input[@type='checkbox'][contains(@id,'day')]"));
+        System.out.println(boxes.size()); boxes.size();
+       
+        //using for loop
+        for (int i = 4; i < boxes.size(); i++) {
+			
+        	boxes.get(i).click();
+		}
+	
+	  //foreach loop
+        /*for (WebElement checkbox : boxes) {
+			checkbox.click();
+		}
+    
+    //clicking only specifics but more than one
+	  for (WebElement checkbox : boxes) {
+		
+		String attribute = checkbox.getAttribute("id");
+		System.out.println(attribute);
+		if (attribute.equals("tuesday") || (attribute.equals("sunday")) ) 
+		{
+			checkbox.click();
+			
+		}
+	}
+         //radio button
+        List<WebElement> buttons = driver.findElements(By.xpath("//input[@type='radio'][contains(@id,'male')]"));
+        for (WebElement radio : buttons) {
+			
+        	String attribute = radio.getAttribute("id");
+        	System.out.println(attribute);
+        	if (attribute.equals("male")) {
+        		radio.click();
+			}
+		}
+        
+        
+	}
+}
